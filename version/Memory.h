@@ -9,7 +9,7 @@
 namespace Memory
 {
 	uintptr_t FindPattern(const char* moduleName, const char* pattern) {
-		// Get the base address of the module
+		// Get the base address of the modules
 		HMODULE moduleHandle = GetModuleHandleA(moduleName);
 		if (!moduleHandle) {
 			std::cerr << _XOR_("Failed to get module handle.") << std::endl;
